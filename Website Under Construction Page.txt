@@ -133,13 +133,13 @@
     <div class="video-background"></div>
     <iframe
         src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g"
-        frameborder="0"
+        frameborder="-10"
         allowfullscreen
     ></iframe>
     <div class="content">
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <p>"A Market Research firm based in the Republic of Congo."</p>
-        <h1 class="bold">Website Under Construction</h1>
+        <h1>Website Under Construction</h1>
         <p>Stay tuned with our Social Networks</p>
         <p class="bold zoom-in-out">Follow Us</p>
         <div class="social-icons">
