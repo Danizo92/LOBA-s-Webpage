@@ -40,7 +40,8 @@
             font-weight: bold;
         }
         .social-icons {
-            margin-top: 20px; /* Adjusted margin for social icons */
+            margin-top: 5px; /* Adjusted margin for social icons */
+            margin-down: 5px; /* Adjusted margin for social icons */
             display: flex;
             gap: 10px;
             justify-content: center;
