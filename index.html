@@ -18,28 +18,27 @@
         }
         #logo {
             max-width: 60%;
-        }
-        h1, p1, p2 {
-            color: #ffffff;
-            text-align: center;
+            margin: auto; /* Center horizontally */
+            display: block; /* Remove extra spacing below image */
         }
         h1 {
+            color: #ffffff;
             font-size: 32px;
             margin-top: 20px;
         }
         p1, p2 {
+            color: #ffffff;
             font-size: 14px;
             margin-top: 5px;
-        }
-        p2 {
-            color: #bf1111;
-            font-style: extra-bold;
+            text-align: center;
         }
         .social-icons {
-            margin-top: 10px;
+            margin-top: 20px; /* Adjusted margin for social icons */
             display: flex;
             gap: 10px;
             justify-content: center;
+            position: relative;
+            z-index: 1;
         }
 
         .social-icon {
