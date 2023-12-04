@@ -49,7 +49,7 @@
             height: auto;
         }
 
-        /* Add the video as background */
+        /* Add the YouTube video as background */
         body::before {
             content: "";
             position: fixed;
@@ -58,7 +58,21 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: url("https://www.dropbox.com/s/a5hfciyve06rbir/_import_61c082d6899921.13979377.mp4?raw=1") center center/cover no-repeat;
+            background: url("https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g") center center/cover no-repeat;
+        }
+
+        /* Animation for Follow Us text */
+        .zoom-in-out {
+            animation: zoomInOut 2s infinite alternate; /* 2s duration, infinite loop, alternate direction */
+        }
+
+        @keyframes zoomInOut {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
         }
     </style>
 </head>
@@ -66,11 +80,12 @@
     <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
     <h1>Website Under Construction</h1>
     <p>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p>
-    <p class="bold">Follow Us</p>
+    <p class="bold zoom-in-out">Follow Us</p>
     <div class="social-icons">
         <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
         <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
         <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
+   
     </div>
 </body>
 </html>
