@@ -57,16 +57,16 @@
         }
 
         .social-icon {
-            width: 30px;
+            width: 50px;
             height: auto;
             margin-bottom: 5px;
         }
 
         /* Desktop Version */
-        @media (min-width: 700px) {
+        @media (min-width: 768px) {
             iframe {
-                width: 250%;
-                height: 250%;
+                width: 300%;
+                height: 300%;
                 position: fixed;
                 top: 0px;
                 left: 0px;
@@ -78,15 +78,15 @@
                 position: fixed;
                 top: 0px;
                 left: 0px;
-                width: 250%;
-                height: 250%;
+                width: 300%;
+                height: 300%;
                 background-color: black;
                 z-index: -1;
             }
         }
 
         /* Mobile Version */
-        @media (max-width: 700px) {
+        @media (max-width: 768px) {
             iframe {
                 width: 400%;
                 height: 400%;
