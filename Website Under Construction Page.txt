@@ -6,7 +6,6 @@
     <title>Loba</title>
     <style>
         body {
-            background-color: #ffffff;
             margin: 0;
             display: flex;
             flex-direction: column;
@@ -15,29 +14,45 @@
             height: 100vh;
             overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
+            position: relative;
         }
+
+        iframe {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
+
+        #content {
+            z-index: 1;
+            text-align: center;
+            color: #1e1e1e;
+        }
+
         #logo {
             max-width: 60%;
         }
-        h1 {
-            color: #1e1e1e;
-            font-size: 32px;
-            margin-top: 20px;
+
+        h1, p {
+            font-size: 24px;
+            margin: 10px;
         }
-        p {
-            color: #1e1e1e;
-            font-size: 14px;
-            margin-top: 5px;
-            text-align: center;
-        }
+
         p.bold {
             color: #bf1111;
             font-weight: bold;
             font-size: 14px;
             margin-top: 5px;
             text-align: center;
-            animation: zoom 1s infinite; /* Apply the zoom animation */
+            animation: zoom 1s infinite;
         }
+
         .social-icons {
             margin-top: 10px;
             display: flex;
@@ -50,24 +65,27 @@
         }
 
         @keyframes zoom {
-            75%, 130% {
+            0%, 100% {
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.1); /* Adjust the zoom level */
+                transform: scale(1.1);
             }
         }
     </style>
 </head>
 <body>
-    <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
-    <h1>Website Under Construction</h1>
-    <p>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p>
-    <p class="bold">Follow Us</p>
-    <div class="social-icons">
-        <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
-        <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
-        <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&loop=1&controls=0&mute=1" frameborder="0" allowfullscreen></iframe>
+    <div id="content">
+        <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
+        <h1>Website Under Construction</h1>
+        <p>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p>
+        <p class="bold">Follow Us</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
+            <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
+        </div>
     </div>
 </body>
 </html>
