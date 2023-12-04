@@ -66,7 +66,7 @@
             width: 200%;
             height: 200%;
             position: fixed;
-            top: 0;
+            top: -10;
             left: -10;
             z-index: -1;
         }
@@ -96,7 +96,7 @@
             0% {
                 transform: scale(1);
             }
-            100% {
+            150% {
                 transform: scale(1.1);
             }
         }
@@ -128,7 +128,7 @@
     <div class="video-background"></div>
     <iframe
         src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g"
-        frameborder="0"
+        frameborder="-5"
         allowfullscreen
     ></iframe>
     <div class="content">
