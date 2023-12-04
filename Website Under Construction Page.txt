@@ -16,7 +16,7 @@
         }
 
         #logo {
-            max-width: 50%; /* Ensure the logo doesn't exceed its container */
+            max-width: 25%; /* Ensure the logo doesn't exceed its container */
         }
 
         h1 {
