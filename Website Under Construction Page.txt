@@ -14,11 +14,11 @@
             justify-content: center;
             height: 100vh; /* Make the body take the full height of the viewport */
             overflow: hidden; /* Hide scrollbars */
-            font-family: 'Your Brand Font', sans-serif; /* Replace 'Your Brand Font' with the actual font family */
+            font-family: 'MTN Brighter Sans', sans-serif; /* Replace 'Your Brand Font' with the actual font family */
         }
 
         #logo {
-            max-width: 25%; /* Ensure the logo doesn't exceed its container */
+            max-width: 50%; /* Ensure the logo doesn't exceed its container */
         }
 
         h1 {
@@ -48,9 +48,6 @@
 </head>
 <body>
     <img id="logo" src="https://drive.google.com/uc?id=1smqBGU0pL3VXsZUmXpu_a5DfdSAXJZqq" alt="Company Logo">
-    <h1>Website Under Construction</h1>
-    <p>Stay informed with our Social Networks</p>
-    
     <div class="social-icons">
         <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="facebook_icon.png" alt="Facebook"></a>
         <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="linkedin_icon.png" alt="LinkedIn"></a>
