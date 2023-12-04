@@ -12,16 +12,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh; /* Change from height to min-height */
+            min-height: 100vh;
             overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
         }
 
         #logo {
             max-width: 40%;
-            margin: auto; /* Center horizontally */
-            display: block; /* Remove extra spacing below image */
-            margin-bottom: 5px; /* Adjusted margin between logo and text */
+            margin: auto;
+            display: block;
+            margin-bottom: 5px;
         }
 
         h1, p, .bold {
@@ -47,8 +47,8 @@
         }
 
         .social-icons {
-            margin-top: 5px; /* Adjusted margin for social icons */
-            margin-bottom: 20px; /* Adjusted margin for social icons */
+            margin-top: 5px;
+            margin-bottom: 20px;
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -69,11 +69,17 @@
             top: 0;
             left: 0;
             z-index: -1;
+            opacity: 0.5; /* 50% transparency */
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
         }
 
         /* Animation for Follow Us text */
         .zoom-in-out {
-            animation: zoomInOut 1.5s infinite alternate; /* 1.5s duration, infinite loop, alternate direction */
+            animation: zoomInOut 1.5s infinite alternate;
         }
 
         @keyframes zoomInOut {
@@ -85,7 +91,6 @@
             }
         }
 
-        /* Media queries for responsiveness */
         @media (max-width: 768px) {
             #logo {
                 max-width: 50%;
@@ -117,15 +122,17 @@
         frameborder="0"
         allowfullscreen
     ></iframe>
-    <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
-    <p>"A Market Research firm based in the Republic of Congo."</p>
-    <h1>Website Under Construction</h1>
-    <p>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p>
-    <p class="bold zoom-in-out">Follow Us</p>
-    <div class="social-icons">
-        <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
-        <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
-        <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
+    <div class="content">
+        <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
+        <p>"A Market Research firm based in the Republic of Congo."</p>
+        <h1>Website Under Construction</h1>
+        <p>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p>
+        <p class="bold zoom-in-out">Follow Us</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
+            <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
+        </div>
     </div>
 </body>
 </html>
