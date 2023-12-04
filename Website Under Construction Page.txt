@@ -13,6 +13,8 @@
             align-items: center;
             justify-content: center;
             height: 100vh; /* Make the body take the full height of the viewport */
+            overflow: hidden; /* Hide scrollbars */
+            font-family: 'Your Brand Font', sans-serif; /* Replace 'Your Brand Font' with the actual font family */
         }
 
         #logo {
@@ -22,7 +24,7 @@
         h1 {
             color: #000000; /* Black color for the header text */
             font-size: 32px; /* Font size 32 */
-            margin-top: 5px; /* Adjust top margin */
+            margin-top: 20px; /* Adjust top margin */
         }
 
         p {
@@ -45,11 +47,6 @@
     </style>
 </head>
 <body>
-<<<<<<< Updated upstream
-    <img src="https://drive.google.com/uc?id=1smqBGU0pL3VXsZUmXpu_a5DfdSAXJZqq" alt="Company Logo">
-    <h1>Under Construction</h1>
-    <p>We're working hard to bring you an awesome website. Stay tuned!</p>
-=======
     <img id="logo" src="https://drive.google.com/uc?id=1smqBGU0pL3VXsZUmXpu_a5DfdSAXJZqq" alt="Company Logo">
     <h1>Website Under Construction</h1>
     <p>Stay informed with our Social Networks</p>
@@ -59,6 +56,5 @@
         <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="linkedin_icon.png" alt="LinkedIn"></a>
         <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="twitter_icon.png" alt="Twitter"></a>
     </div>
->>>>>>> Stashed changes
 </body>
 </html>
