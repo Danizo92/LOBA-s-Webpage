@@ -16,32 +16,38 @@
             overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
         }
+
         #logo {
             max-width: 40%;
             margin: auto; /* Center horizontally */
             display: block; /* Remove extra spacing below image */
         }
-        h1 {
+
+        h1, p, .bold {
             color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
             font-size: 32px;
             margin-top: 5px;
         }
+
         p {
-            color: #ffffff;
             font-size: 14px;
             margin-top: 5px;
-            text-align: center;
         }
+
         .bold {
             color: #bf1111;
             font-size: 20px;
             margin-top: 5px;
-            text-align: center;
             font-weight: bold;
         }
+
         .social-icons {
             margin-top: 5px; /* Adjusted margin for social icons */
-            margin-down: 5px; /* Adjusted margin for social icons */
+            margin-bottom: 20px; /* Adjusted margin for social icons */
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -52,7 +58,7 @@
         .social-icon {
             width: 30px;
             height: auto;
-            margin-down: 5px;
+            margin-bottom: 5px;
         }
 
         /* Add the YouTube video as background */
@@ -80,6 +86,29 @@
                 transform: scale(1.1);
             }
         }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            #logo {
+                max-width: 80%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .bold {
+                font-size: 16px;
+            }
+
+            .social-icon {
+                width: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -91,7 +120,6 @@
         <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
         <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
         <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
-   
     </div>
 </body>
 </html>
