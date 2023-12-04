@@ -16,17 +16,14 @@
             overflow: hidden; /* Hide scrollbars */
             font-family: 'MTN Brighter Sans', sans-serif; /* Replace 'Your Brand Font' with the actual font family */
         }
-
         #logo {
             max-width: 60%; /* Ensure the logo doesn't exceed its container */
         }
-
         h1 {
             color: #000000; /* Black color for the header text */
             font-size: 32px; /* Font size 32 */
             margin-top: 20px; /* Adjust top margin */
         }
-
         p {
             color: #000000; /* Black color for the paragraph text */
             font-size: 14px; /* Font size 14 */
