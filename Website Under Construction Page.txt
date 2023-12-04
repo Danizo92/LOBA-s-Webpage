@@ -38,7 +38,7 @@
             text-align: center;
         }
         .social-icons {
-            margin-top: 50vh;
+            margin-top: 20px; /* Adjusted margin for better positioning */
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -52,19 +52,25 @@
         }
 
         /* Add the YouTube video as background */
-        body::before {
-            content: "";
+        video {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
             z-index: -1;
-            background: url("https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g") center center/cover no-repeat;
         }
     </style>
 </head>
 <body>
+    <!-- Video Tag for Background -->
+    <video autoplay loop muted>
+        <source src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g" type="video/mp4">
+    </video>
+
     <h1>Website Under Construction</h1>
     <p1>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p1>
     <p2>Follow Us</p2>
