@@ -44,7 +44,7 @@
     </style>
 </head>
 <body>
-    <img id="logo" src="https://drive.google.com/uc?id=1smqBGU0pL3VXsZUmXpu_a5DfdSAXJZqq" alt="Company Logo">
+    <img id="logo" src="https://drive.google.com/file/d/1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO/view?usp=sharing">
     <h1>Website Under Construction</h1>
     <p>You'll be the first to know once it's ready.</p>
     <p> Stay tuned with our Social Networks</p>
