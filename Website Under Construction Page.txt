@@ -12,7 +12,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Change from height to min-height */
             overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
         }
@@ -112,7 +112,7 @@
 </head>
 <body>
     <video autoplay loop muted>
-        <source src="https://drive.google.com/file/d/1-iz96PD1wyYXgA6j95xaTkX-7ESTJahe" type="video/mp4">
+        <source src="https://drive.google.com/file/d/1-iz96PD1wyYXgA6j95xaTkX-7ESTJahe/view?usp=drive_link" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
