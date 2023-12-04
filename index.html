@@ -17,25 +17,26 @@
             font-family: 'MTN Brighter Sans', sans-serif;
         }
         #logo {
-            max-width: 50%;
+            max-width: 60%;
         }
-        h1.bold {
+        h1 {
             color: #1e1e1e;
-            font-size: 36px;
+            font-size: 32px;
             margin-top: 20px;
         }
         p {
             color: #1e1e1e;
-            font-size: 18px;
+            font-size: 14px;
             margin-top: 5px;
             text-align: center;
         }
         p.bold {
             color: #bf1111;
-            font-weight: bold; /* Use 'bold' instead of 'ExtraBold' */
-            font-size: 18px;
+            font-weight: bold;
+            font-size: 14px;
             margin-top: 5px;
             text-align: center;
+            animation: shake 0.8s infinite; /* Apply the shake animation */
         }
         .social-icons {
             margin-top: 10px;
@@ -46,6 +47,18 @@
         .social-icon {
             width: 30px;
             height: auto;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25%, 75% {
+                transform: translateX(-5px); /* Adjust the distance of the shake */
+            }
+            50% {
+                transform: translateX(5px); /* Adjust the distance of the shake */
+            }
         }
     </style>
 </head>
