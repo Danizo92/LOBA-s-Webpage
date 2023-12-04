@@ -114,7 +114,8 @@
 </head>
 <body>
     <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
-    <p>"We are a Market Research firm based in the Republic of Congo. Reliable data are important to us, and that's why we do what we do</p>
+    <p>"We are a Market Research firm based in the Republic of Congo.
+        Reliable data are important to us, and that's why we do what we do</p>
     <h1>Website Under Construction</h1>
     <p>You'll be the first to know once it's ready. Stay tuned with our Social Networks</p>
     <p class="bold zoom-in-out">Follow Us</p>
