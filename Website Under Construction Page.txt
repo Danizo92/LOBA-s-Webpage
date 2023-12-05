@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loba</title>
     <link rel="icon" type="image/png" href="https://drive.google.com/uc?id=1-wi6KeJsN6SDUEJd3SE-Ri4nb4UwyDG6">
-    
+
     <!-- Google Analytics 4 Property code -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-919LF89JBZ"></script>
     <script>
@@ -73,62 +73,12 @@
             margin-bottom: 5px;
         }
 
-        /* Desktop Version */
-        @media (min-width: 768px) {
-            iframe {
-                display: none; /* Turn off the background video */
-            }
-
-            .video-background {
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                width: 300%;
-                height: 300%;
-                background-color: black;
-                z-index: -1;
-            }
-        }
-
-        /* Mobile Version */
-        @media (max-width: 768px) {
-            iframe {
-                display: none; /* Turn off the background video */
-            }
-
-            .video-background {
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                width: 400%;
-                height: 400%;
-                background-color: black;
-                z-index: -1;
-            }
-
-            #logo {
-                max-width: 50%;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 12px;
-            }
-
-            .bold {
-                font-size: 16px;
-            }
-
-            .social-icon {
-                width: 30px;
-            }
-        }
-
         /* Navigation Menu */
         nav {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             gap: 20px; /* Reduced gap between sections */
             margin-bottom: 20px; /* Additional spacing between navigation and content */
