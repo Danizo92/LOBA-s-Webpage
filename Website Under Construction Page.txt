@@ -123,13 +123,15 @@
     </style>
 </head>
 <body>
-    <div class="video-background"></div>
+ <!--  
+ <div class="video-background"></div>
     <iframe
         src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g"
         frameborder="-10"
         allowfullscreen
         async <!-- Add 'async' attribute here -->
     ></iframe>
+ -->
     <div class="content">
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <p>"A Market Research firm based in the Republic of Congo."</p>
