@@ -104,9 +104,9 @@
     <div class="content">
         <nav>
             <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Our Services</a>
-            <a href="#">Contact Us</a>
+            <a href="https://www.linkedin.com/company/lobaresearch/about/?viewAsMember=true" target="_blank">About us</a>
+            <a href="https://drive.google.com/file/d/13vn4xhoB5nnNBTKnhKUsq7FTaGhIqbXL/view?usp=sharing" target="_blank">Our Services</a>
+            <a href="mailto:danael@lobaresearch.com">Contact Us</a>
         </nav>
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <p>"A Market Research firm based in the Republic of Congo."</p>
