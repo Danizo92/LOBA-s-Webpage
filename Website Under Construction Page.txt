@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loba</title>
     <link rel="icon" type="image/png" href="https://drive.google.com/uc?id=1-wi6KeJsN6SDUEJd3SE-Ri4nb4UwyDG6">
-
+    
     <!-- Google Analytics 4 Property code -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-919LF89JBZ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-919LF89JBZ');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-919LF89JBZ');
     </script>
 
     <style>
@@ -25,36 +25,19 @@
             min-height: 100vh;
             overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
-            background-color: black; /* Set background color to black */
-        }
-
-        /* Navigation bar styles */
-        nav {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-            font-size: 18px;
-            z-index: 9999;
-            font-family: 'MTN Brighter Sans', sans-serif;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
+            background-color: black; /* Entirely black-colored background */
         }
 
         #logo {
             max-width: 40%;
-            margin: auto;
+            margin: 20px auto 5px; /* Added spacing between navigation and logo */
             display: block;
-            margin-bottom: 5px;
         }
 
         h1, p, .bold {
             color: #ffffff;
             text-align: center;
+            margin: 0; /* Remove default margin for better spacing */
         }
 
         h1 {
@@ -85,7 +68,7 @@
         }
 
         .social-icon {
-            width: 50px; /* Adjusted width for better visibility */
+            width: 50px;
             height: auto;
             margin-bottom: 5px;
         }
@@ -93,15 +76,9 @@
         /* Desktop Version */
         @media (min-width: 768px) {
             iframe {
-                width: 300%;
-                height: 300%;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                z-index: -1;
+                display: none; /* Turn off the background video */
             }
 
-            /* Added black background to the video */
             .video-background {
                 position: fixed;
                 top: 0px;
@@ -116,15 +93,9 @@
         /* Mobile Version */
         @media (max-width: 768px) {
             iframe {
-                width: 400%;
-                height: 400%;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                z-index: -1;
+                display: none; /* Turn off the background video */
             }
 
-            /* Added black background to the video */
             .video-background {
                 position: fixed;
                 top: 0px;
@@ -155,24 +126,32 @@
                 width: 30px;
             }
         }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            gap: 20px; /* Reduced gap between sections */
+            margin-bottom: 20px; /* Additional spacing between navigation and content */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: 'MTN Brighter Sans', sans-serif;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About Us</a> |
-        <a href="#services">Our Services</a> |
-        <a href="#contact">Contact Us</a>
-    </nav>
-
     <div class="video-background"></div>
-    <iframe
-        src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g"
-        frameborder="-10"
-        allowfullscreen
-    ></iframe>
+    <!-- Removed iframe for the background video -->
     <div class="content">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Our Services</a>
+            <a href="#">Contact Us</a>
+        </nav>
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <p>"A Market Research firm based in the Republic of Congo."</p>
         <h1>Website Under Construction</h1>
