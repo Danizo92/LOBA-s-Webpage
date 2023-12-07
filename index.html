@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loba</title>
     <link rel="icon" type="image/png" href="https://drive.google.com/uc?id=1-wi6KeJsN6SDUEJd3SE-Ri4nb4UwyDG6">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-919LF89JBZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-919LF89JBZ');
-    </script>
-
     <style>
         body {
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
         }
 
@@ -63,40 +59,27 @@
         .social-icon {
             width: 50px;
             height: auto;
-            margin-bottom: 10px;
-            transition: color 0.3s; /* Add transition for color change */
-        }
-
-        .social-icon:hover, .social-icon:active {
-            color: #bf1111; /* Change color on hover and click */
+            margin-bottom: 5px;
         }
 
         /* Desktop Version */
         @media (min-width: 768px) {
-            body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                min-height: 100vh;
-                overflow: hidden;
-            }
-
             iframe {
-                width: 300%;
-                height: 300%;
+                width: 100%;
+                height: 100%;
                 position: fixed;
-                top: 0px;
-                left: 0px;
+                top: 0;
+                left: 0;
                 z-index: -1;
             }
 
+            /* Added black background to the video */
             .video-background {
                 position: fixed;
-                top: 0px;
-                left: 0px;
-                width: 300%;
-                height: 300%;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
                 background-color: black;
                 z-index: -1;
             }
@@ -104,30 +87,61 @@
 
         /* Mobile Version */
         @media (max-width: 768px) {
-            body {
-                display: flex;
+            #menu-toggle {
+                display: block;
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                cursor: pointer;
+                z-index: 2;
+            }
+
+            #menu-icon {
+                width: 30px;
+                height: 5px;
+                background-color: white;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            #menu {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                min-height: 100vh;
-                overflow: hidden;
+                z-index: 1;
+            }
+
+            #menu a {
+                color: white;
+                text-decoration: none;
+                font-size: 24px;
+                margin: 20px;
+                font-family: 'MTN Brighter Sans', sans-serif;
             }
 
             iframe {
-                width: 400%;
-                height: 400%;
+                width: 100%;
+                height: 100%;
                 position: fixed;
-                top: 0px;
-                left: 0px;
+                top: 0;
+                left: 0;
                 z-index: -1;
             }
 
+            /* Added black background to the video */
             .video-background {
                 position: fixed;
-                top: 0px;
-                left: 0px;
-                width: 400%;
-                height: 400%;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
                 background-color: black;
                 z-index: -1;
             }
@@ -148,41 +162,27 @@
                 font-size: 16px;
             }
 
-            /* Additional styling for navigation menu */
-            .navigation {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background-color: #000000;
-            }
-
-            .navigation a {
-                color: #ffffff;
-                text-decoration: none;
-                font-size: 16px;
-                padding: 10px;
-                display: block;
-                text-align: center;
-            }
-
-            .menu-icon {
-                display: block;
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                cursor: pointer;
-                z-index: 2;
-                color: #ffffff;
-                font-size: 24px;
+            .social-icon {
+                width: 30px;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="video-background"></div>
-    <iframe src="https://www.youtube.com/embed/AO3
+    <iframe
+        src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g"
+        frameborder="0"
+        allowfullscreen
+        async
+    ></iframe>
+    <div class="content">
+        <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
+        <p>"A Market Research firm based in the Republic of Congo."</p>
+        <h1>Website Under Construction</h1>
+        <p>Stay tuned with our Social Networks</p>
+        <p class="bold zoom-in-out">Follow Us</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
+            <a href="https://twitter.com/
