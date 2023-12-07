@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loba</title>
     <link rel="icon" type="image/png" href="https://drive.google.com/uc?id=1-wi6KeJsN6SDUEJd3SE-Ri4nb4UwyDG6">
+
+    <!-- Google Analytics 4 Property code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-919LF89JBZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-919LF89JBZ');
+    </script>
+
     <style>
         body {
             margin: 0;
@@ -15,18 +25,19 @@
             min-height: 100vh;
             overflow: hidden;
             font-family: 'MTN Brighter Sans', sans-serif;
+            background-color: black; /* Entirely black-colored background */
         }
 
         #logo {
             max-width: 40%;
-            margin: auto;
+            margin: 20px auto 5px; /* Added spacing between navigation and logo */
             display: block;
-            margin-bottom: 5px;
         }
 
         h1, p, .bold {
             color: #ffffff;
             text-align: center;
+            margin: 0; /* Remove default margin for better spacing */
         }
 
         h1 {
@@ -47,8 +58,8 @@
         }
 
         .social-icons {
-            margin-top: 5px;
-            margin-bottom: 20px;
+            margin-top: 10px; /* Adjusted margin-top for the Navigation menu */
+            margin-bottom: 10px; /* Adjusted margin-bottom for the Social Network Logo */
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -62,121 +73,41 @@
             margin-bottom: 5px;
         }
 
-        /* Desktop Version */
-        @media (min-width: 768px) {
-            iframe {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: -1;
-            }
-
-            /* Added black background to the video */
-            .video-background {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: black;
-                z-index: -1;
-            }
+        /* Navigation Menu */
+        nav {
+            position: absolute;
+            top: 10px; /* Adjusted margin-top for the Navigation menu */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px; /* Reduced gap between sections */
+            margin-bottom: 20px; /* Additional spacing between navigation and content */
         }
 
-        /* Mobile Version */
-        @media (max-width: 768px) {
-            #menu-toggle {
-                display: block;
-                position: fixed;
-                top: 10px;
-                left: 10px;
-                cursor: pointer;
-                z-index: 2;
-            }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: 'MTN Brighter Sans', sans-serif;
+            font-size: 16px;
+            transition: color 0.3s; /* Smooth color transition on hover and active */
+        }
 
-            #menu-icon {
-                width: 30px;
-                height: 5px;
-                background-color: white;
-                margin: 6px 0;
-                transition: 0.4s;
-            }
-
-            #menu {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: black;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                z-index: 1;
-            }
-
-            #menu a {
-                color: white;
-                text-decoration: none;
-                font-size: 24px;
-                margin: 20px;
-                font-family: 'MTN Brighter Sans', sans-serif;
-            }
-
-            iframe {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: -1;
-            }
-
-            /* Added black background to the video */
-            .video-background {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: black;
-                z-index: -1;
-            }
-
-            #logo {
-                max-width: 50%;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 12px;
-            }
-
-            .bold {
-                font-size: 16px;
-            }
-
-            .social-icon {
-                width: 30px;
-            }
+        nav a:hover,
+        nav a:active {
+            color: #bf1111; /* Change color on hover and active */
         }
     </style>
 </head>
 <body>
     <div class="video-background"></div>
-    <iframe
-        src="https://www.youtube.com/embed/AO3x9z-PW_g?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=AO3x9z-PW_g"
-        frameborder="0"
-        allowfullscreen
-        async
-    ></iframe>
+    <!-- Removed iframe for the background video -->
     <div class="content">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Our Services</a>
+            <a href="#">Contact Us</a>
+        </nav>
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <p>"A Market Research firm based in the Republic of Congo."</p>
         <h1>Website Under Construction</h1>
@@ -185,4 +116,8 @@
         <div class="social-icons">
             <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
             <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
-            <a href="https://twitter.com/
+            <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
+        </div>
+    </div>
+</body>
+</html>
