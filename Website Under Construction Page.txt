@@ -171,6 +171,22 @@
             nav {
                 display: none;
             }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .bold {
+                font-size: 16px;
+            }
+
+            #logo {
+                max-width: 50%;
+            }
         }
     </style>
 </head>
@@ -204,7 +220,7 @@
     <div class="content">
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <p>"A Market Research firm based in the Republic of Congo."</p>
-        <h1>Website Under Construction</h1>
+        <h1>Website<br>Under Construction</h1>
         <p>Stay tuned with our Social Networks</p>
         <p class="bold zoom-in-out">Follow Us</p>
         <div class="social-icons">
