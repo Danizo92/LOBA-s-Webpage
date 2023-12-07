@@ -101,10 +101,11 @@
         .mobile-menu {
             display: none;
             position: absolute;
-            top: 10px; /* Adjusted margin-top for the Navigation menu */
+            top: 13px; /* Adjusted position for the mobile menu */
             left: 10px;
             cursor: pointer;
             z-index: 2;
+            margin-left: 10px; /* Added margin-left */
         }
 
         .mobile-menu div {
@@ -208,18 +209,4 @@
         <p class="bold zoom-in-out">Follow Us</p>
         <div class="social-icons">
             <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/company/lobaresearch/?viewAsMember=true" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-_YAjXvxuIsJw-N3pS66kbJ1iSk9h9mj" alt="LinkedIn"></a>
-            <a href="https://twitter.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-ZoNDTJQe8u-Wx9xmRBfY3tHIajKErA0" alt="Twitter"></a>
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            const mobileNav = document.querySelector('.mobile-nav');
-            const body = document.querySelector('body');
-            body.classList.toggle('menu-open');
-            mobileNav.style.display = body.classList.contains('menu-open') ? 'flex' : 'none';
-        }
-    </script>
-</body>
-</html>
+            <a href="https://www
