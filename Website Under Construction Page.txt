@@ -29,7 +29,7 @@
         }
 
         #logo {
-            max-width: 40%;
+            max-width: 100%;
             margin: 20px auto 5px; /* Added spacing between navigation and logo */
             display: block;
         }
