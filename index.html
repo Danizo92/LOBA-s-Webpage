@@ -160,11 +160,18 @@
         }
 
         /* Loading Bar Styles */
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+
         .loading-bar {
             width: 25%;
             height: 10px;
             background-color: #333;
-            margin: 20px 0;
         }
 
         .loading-progress {
@@ -181,11 +188,11 @@
 
         .loading-dots {
             font-size: 20px;
-            animation: blink 1.5s infinite; /* Blinking animation */
+            animation: blink 3s infinite; /* Blinking animation */
         }
 
         @keyframes blink {
-            0%, 50%, 100% {
+            0%, 100% {
                 opacity: 0;
             }
             50% {
@@ -261,13 +268,16 @@
         <img id="logo" src="https://drive.google.com/uc?id=1_o81XmqsC0RnPE2Wr1mh9jCyBttmdIDO" alt="Company Logo">
         <h1>Website Under Construction</h1>
         
-        <!-- Loading Bar -->
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
-        </div>
+        <!-- Loading Container -->
+        <div class="loading-container">
+            <!-- Loading Bar -->
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
 
-        <!-- Loading Text and Dots -->
-        <p class="loading-text">Loading <span class="loading-dots">...</span></p>
+            <!-- Loading Text and Dots -->
+            <p class="loading-text">Loading <span class="loading-dots">...</span></p>
+        </div>
 
         <!-- Social Networks Logos -->
         <p class="bold zoom-in-out">Follow Us</p>
