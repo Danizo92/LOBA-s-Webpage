@@ -162,28 +162,70 @@
         /* Loading Bar Styles */
         .loading-bar {
             width: 100%;
-            height: 10px; /* Adjusted height of the loading bar */
-            background-color: #333; /* Darker background color */
-            position: fixed;
-            bottom: 60px; /* Adjusted position */
-            left: 0;
-            z-index: 2;
+            height: 10px;
+            background-color: #333;
+            margin: 20px 0;
         }
 
         .loading-progress {
-            width: 64%; /* Adjusted initial width of the loading progress */
+            width: 64%;
             height: 100%;
-            background-color: #e74c3c; /* Red progress color */
-            transition: width 2s ease-in-out; /* Adjusted animation duration and timing function */
+            background-color: #bf1111; /* Loading bar color */
         }
 
+        /* Loading Text and Dots Styles */
         .loading-text {
-            margin-top: 10px; /* Adjusted margin-top for the loading text */
-            font-size: 16px; /* Adjusted font size of the loading text */
+            font-size: 14px;
+            margin: 10px 0;
         }
 
         .loading-dots {
-            font-size: 16px; /* Adjusted font size of the loading dots */
+            font-size: 20px;
+            animation: blink 1.5s infinite; /* Blinking animation */
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            nav {
+                display: none;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .bold {
+                font-size: 16px;
+            }
+
+            #logo {
+                max-width: 50%;
+            }
+
+            /* Adjusted spacing for mobile */
+            .social-icons {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -225,10 +267,9 @@
         </div>
 
         <!-- Loading Text and Dots -->
-        <p class="loading-text">Loading...</p>
-        <p class="loading-dots">...</p>
+        <p class="loading-text">Loading <span class="loading-dots">...</span></p>
 
-        <p>Stay tuned with our Social Networks</p>
+        <!-- Social Networks Logos -->
         <p class="bold zoom-in-out">Follow Us</p>
         <div class="social-icons">
             <a href="https://facebook.com/lobaresearch" target="_blank"><img class="social-icon" src="https://drive.google.com/uc?id=1-W6ayMsgg8wsyUSj6aRQv-b42nuFCuhL" alt="Facebook"></a>
