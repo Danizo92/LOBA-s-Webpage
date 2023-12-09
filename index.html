@@ -172,6 +172,7 @@
             width: 25%;
             height: 10px;
             background-color: #333;
+            animation: loadingAnimation 2s ease-in-out; /* Loading bar animation */
         }
 
         .loading-progress {
@@ -197,6 +198,15 @@
             }
             50% {
                 opacity: 1;
+            }
+        }
+
+        @keyframes loadingAnimation {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 25%;
             }
         }
 
